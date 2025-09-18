@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Trip | Explore the World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-shape">
+                    <div class="logo-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-main-container">
+                        <span class="logo-main">APNA</span>
+                        <span class="logo-sub">TRIP</span>
+                    </div>
+                    <div class="logo-tagline">Explore the World</div>
+                </div>
+                <div class="logo-particles">
+                    <span></span><span></span><span></span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <!-- Desktop Buttons -->
+            <div class="desktop-buttons">
+                <div class="button-wrapper">
+                    <a href="#" class="nav-cta">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Book Now</span>
+                    </a>
+                </div>
+                <div class="button-wrapper">
+                    <button class="account-btn" id="openLoginModal">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="ml-1">Account</span>
+                    </button>
+                </div>
+            </div>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Panel -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-panel">
+        <button class="mobile-close-btn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="mobile-nav">
+            <a href="#" class="mobile-nav-link active">Home</a>
+            <a href="#destinations" class="mobile-nav-link">Destinations</a>
+            <a href="#packages" class="mobile-nav-link">Packages</a>
+            <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            
+            <div class="mobile-buttons">
+                <div class="button-wrapper">
+                    <a href="#" class="nav-cta">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Book Now</span>
+                    </a>
+                </div>
+                <div class="button-wrapper">
+                    <button class="account-btn" id="openLoginModalMobile">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Account</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Explore the World with Us</span>
+                <h1>Discover Amazing Places Around The Globe</h1>
+                <p class="hero-description">Find and book incredible experiences, tours, and activities at the best prices. Your next adventure starts here.</p>
+                
+                <div class="hero-search">
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" placeholder="Search destinations, cities, or experiences..." class="search-input">
+                        <button class="search-button">
+                            <span>Search</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="popular-searches">
+                    <span>Popular Searches:</span>
+                    <a href="#">Beach</a>
+                    <a href="#">Mountain</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Luxury</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Travel Destination">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-label">Top Destination</span>
+                        <h4>Bali, Indonesia</h4>
+                        <div class="card-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (2.4k reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>150+ Destinations</h4>
+                    <p>Worldwide coverage</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>Best Price Guarantee</h4>
+                    <p>Find it cheaper? We'll match it</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>24/7 Support</h4>
+                    <p>We're here to help</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Top Destinations</span>
+                <h2 class="section-title">Explore The World</h2>
+                <p class="section-subtitle">Discover the most beautiful places with our handpicked selection of destinations that will take your breath away.</p>
+            </div>
+            <div class="destinations-grid">
+                <!-- Destination Card 1 -->
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://shorturl.at/bAzGy');">
+                        <div class="price">$599</div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Experience the island of gods with its stunning beaches, ancient temples, and vibrant culture.</p>
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(128 reviews)</span>
+                        </div>
+                        <div class="destination-meta">
+                            <span class="destination-duration"><i class="far fa-clock"></i> 7 Days</span>
+                            <a href="#" class="destination-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination Card 2 -->
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1533107862482-0e6974f06b43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="price">$899</div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Santorini, Greece</h3>
+                        <p>Whitewashed buildings, blue domes, and breathtaking sunsets await in this Greek paradise.</p>
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(245 reviews)</span>
+                        </div>
+                        <div class="destination-meta">
+                            <span class="destination-duration"><i class="far fa-clock"></i> 5 Days</span>
+                            <a href="#" class="destination-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination Card 3 -->
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="price">$1,299</div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Immerse yourself in traditional Japanese culture with ancient temples and stunning gardens.</p>
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(198 reviews)</span>
+                        </div>
+                        <div class="destination-meta">
+                            <span class="destination-duration"><i class="far fa-clock"></i> 10 Days</span>
+                            <a href="#" class="destination-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 60px;">
+                <a href="#" class="btn btn-outline">View All Destinations <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Packages -->
+    <section id="packages" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Best Packages</h2>
+            <p class="section-subtitle">Handpicked experiences for your perfect vacation</p>
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                        <span class="package-tag">Bestseller</span>
+                        <span class="package-price">$1,299 <span>per person</span></span>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-duration">
+                            <i class="far fa-calendar-alt"></i> 7 Days / 6 Nights
+                        </div>
+                        <h3>Bali Paradise Escape</h3>
+                        <p>Experience the magic of Bali with luxurious stays, private tours, and breathtaking sunsets.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 5-Star Resort</span>
+                            <span><i class="fas fa-utensils"></i> Breakfast Included</span>
+                            <span><i class="fas fa-plane"></i> Flights Included</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-block">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                        <span class="package-tag">Popular</span>
+                        <span class="package-price">$2,199 <span>per person</span></span>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-duration">
+                            <i class="far fa-calendar-alt"></i> 10 Days / 9 Nights
+                        </div>
+                        <h3>European Adventure</h3>
+                        <p>Explore the best of Europe with visits to Paris, Rome, and Barcelona in one amazing trip.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 4-Star Hotels</span>
+                            <span><i class="fas fa-utensils"></i> Half Board</span>
+                            <span><i class="fas fa-bus"></i> Guided Tours</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-block">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 - Swiss Alps Explorer -->
+                <div class="package-card">
+                    <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                        <span class="package-tag">Best Value</span>
+                        <div class="package-price">
+                            <span class="price-amount">$1,299</span>
+                            <span class="price-label">per person</span>
+                            <span class="price-original">$1,799</span>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-duration">
+                            <i class="far fa-calendar-alt"></i> 6 Days / 5 Nights
+                        </div>
+                        <h3>Swiss Alps Explorer</h3>
+                        <p>Experience the breathtaking Swiss Alps with guided hikes, scenic train journeys, and stays in charming alpine villages. Includes daily breakfast and a cable car pass.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 4-Star Alpine Lodge</span>
+                            <span><i class="fas fa-utensils"></i> Breakfast Included</span>
+                            <span><i class="fas fa-mountain"></i> Cable Car Pass</span>
+                            <span><i class="fas fa-hiking"></i> Guided Hikes</span>
+                            <span><i class="fas fa-train"></i> Scenic Train Rides</span>
+                            <span><i class="fas fa-map-marked-alt"></i> City Tour of Zurich</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Book Now & Save</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#" class="btn btn-primary">View All Packages <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Travelers Say</h2>
+                <p class="section-subtitle">Hear from our satisfied travelers about their experiences with us.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The trip to Bali was absolutely amazing! Everything was perfectly organized, and we had the best time exploring the beautiful beaches and culture. Will definitely book again!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="testimonial-avatar">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>Traveled to Bali</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent service from start to finish. The team went above and beyond to make our European tour memorable. Highly recommended for anyone looking for a hassle-free vacation."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="testimonial-avatar">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>European Tour</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The mountain trek in Nepal was an experience of a lifetime. The guides were knowledgeable and the accommodations were comfortable. Can't wait for our next adventure!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Patel" class="testimonial-avatar">
+                        <div>
+                            <h4>Priya Patel</h4>
+                            <span>Nepal Trekking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Travel Street, Wanderlust City, 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@wanderlust.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Adventures is a premier travel agency dedicated to providing unforgettable travel experiences around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Wanderlust City, 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@wanderlust.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest travel deals and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Adventures. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome Back!</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group remember-forgot">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <div class="auth-footer">
+                        Don't have an account? <a href="#" class="signup-link">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome Back!</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group remember-forgot">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <div class="auth-footer">
+                        Don't have an account? <a href="#" class="signup-link">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Your Account</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-input">
+                            <input type="password" id="password" placeholder="Create a password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group terms">
+                        <div class="terms-container">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms" class="terms-label">
+                                <span class="checkbox-custom"></span>
+                                <span class="terms-text">I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                        <div class="terms-error">Please accept the terms and conditions to continue</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                    <div class="auth-footer">
+                        Already have an account? <a href="#" class="login-link">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/account-modal.js"></script>
+</body>
+</html>
